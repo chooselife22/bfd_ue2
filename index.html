@@ -5,13 +5,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type='text/javascript' src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js'></script>
     <link type='text/css' rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
-    <link type='text/css' rel='stylesheet' href='/assets/style.css'>
-    <script type='javascript/text' src='/assets/application.js'></script>
+    <link type='text/css' rel='stylesheet' href='assets/style.css'>
+    <script type='javascript/text' src='assets/application.js'></script>
   </head>
   <body>  
     <div class="container">
       <div class="page-header">
-        <img src="/assets/images/Disability_symbols1.png" title="The Page Header with Accessibilty Symbols" alt="accessibilty symbols page header">
+        <img src="assets/images/Disability_symbols1.png" title="The Page Header with Accessibilty Symbols" alt="accessibilty symbols page header">
       </div>
       <div class="row">
         <div class="col-sm-3">
@@ -49,7 +49,33 @@
           </div>
         </div>
         <div class="col-sm-9">
-          Main content goes here
+          
+          <h1>Kontaktformular</h1>
+          <form role="form">
+            <div class="form-group">
+              <label for="contactName">Vorname</label>
+              <input type="text" class="form-control" id="contactName" placeholder="Vorname eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSurname">Name</label>
+              <input type="text" class="form-control" id="contactSurname" placeholder="Name eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">E-Mail</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="E-Mail eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Telefonnummer</label>
+              <input type="tel" class="form-control" id="contactPhone" placeholder="Telefonnummer eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactBirthday">Geburtstag</label>
+              <input type="date" class="form-control" id="contactBirthday" placeholder="Geburtsdatum in der Form DD.MM.JJJJ eingeben" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Absenden</button>
+          </form>
+
+
         </div>
       </div> 
     </div>
