@@ -27,4 +27,19 @@
 
 .dropdown-menu {
   position: relative;
+  float: none;
+  width: auto;
+  margin-top: 0px;
+  background-color: transparent;
+  border: 0px none;
+  box-shadow: none;
+}
+
+.dropdown-menu li a {
+  color: #777;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #555;
+  background-color: #E7E7E7;
 }
