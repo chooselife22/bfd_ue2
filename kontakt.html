@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barrierefreiheit - Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type='text/javascript' src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js'></script>
+    <link type='text/css' rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
+    <link type='text/css' rel='stylesheet' href='assets/style.css'>
+    <script type='javascript/text' src='assets/application.js'></script>
+  </head>
+  <body>  
+    <div class="container">
+      <header class="page-header">
+        <img src="assets/images/Disability_symbols1.png" title="The Page Header with Accessibility Symbols" alt="accessibility symbols page header">
+      </header>
+      <div class="row">
+        <aside class="col-sm-3">
+          <div class="sidebar-nav">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                  <span class="sr-only">Navigation umschalten</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <span class="visible-xs navbar-brand">Seiten-Menü</span>
+              </div>
+              <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="gesetz.html">Gesetzliche Regelungen</a></li>
+                  <li><a href="normen.html">Normen</a></li>
+                  <li class="dropdown">
+                    <a href="grenzen.html" class="dropdown-toggle" data-toggle="dropdown">Grenzen der Barrierfreiheit <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="grenzen-allgemein.html">Allgemein</a></li>
+                      <li><a href="grenzen-luftverkehr.html">Luftverkehr</a></li>
+                    </ul>
+                  </li>
+                  <li class="active"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </nav>
+          </div>
+        </aside>
+        <div class="col-sm-9">
+          
+          <h1>Kontaktformular</h1>
+          <form role="form">
+            <div class="form-group">
+              <label for="contactName">Vorname</label>
+              <input type="text" class="form-control" id="contactName" placeholder="Vorname eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSurname">Name</label>
+              <input type="text" class="form-control" id="contactSurname" placeholder="Name eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">E-Mail</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="E-Mail eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Telefonnummer</label>
+              <input type="tel" class="form-control" id="contactPhone" placeholder="Telefonnummer eingeben" required>
+            </div>
+            <div class="form-group">
+              <label for="contactBirthday">Geburtstag</label>
+              <input type="date" class="form-control" id="contactBirthday" placeholder="Geburtsdatum in der Form DD.MM.JJJJ eingeben" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Absenden</button>
+          </form>
+          
+        </div>
+      </div> 
+    </div>
+  </body>
+</html>
